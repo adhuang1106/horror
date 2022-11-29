@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> FOLDER </title>
+        <style>
+            body {
+              background-image: url('../static/folder.png');
+              height: auto;
+              position:fixed;
+              top:0;
+              left:0;
+              max-height: 100%;
+              width:100%;
+              min-height: 100%;
+              min-width: 1024px;
+              background-repeat: no-repeat;
+            }
+        </style>
+         <script>
+            function imgWindow() {
+             window.open("") }
+             var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+           </script>
+    </head>
+    <body>
+        <br>
+        <br> 
+        <img src="../static/key1.png" height="100px" width="100px" style ="position:fixed; left:175px; top:150px" onclick="window.open(this.src)">
+        <img src="../static/key2.png" height="100px" width="100px" style ="position:fixed; left:300px; top:150px" onclick="window.open(this.src)">
+        <img src="../static/key3.png" height="100px" width="100px" style ="position:fixed; left:425px; top:150px" onclick="window.open(this.src)">
+        <img src="../static/key4.png" height="100px" width="100px" style ="position:fixed; left:550px; top:150px" onclick="window.open(this.src)">
+        <img src="../static/key5.png" height="100px" width="100px" style ="position:fixed; left:175px; top:275px" onclick="window.open(this.src)">
+        <img src="../static/key6.png" height="100px" width="100px" style ="position:fixed; left:300px; top:275px" onclick="window.open(this.src)">
+        <img src="../static/key7.png" height="100px" width="100px" style ="position:fixed; left:425px; top:275px" onclick="window.open(this.src)">
+        <iframe src="../static/creepy-piano-ambience-by-tim-kulig-from-filmmusic-io.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+        <audio id="player" autoplay="true" loop="true">
+            <source src="../static/creepy-piano-ambience-by-tim-kulig-from-filmmusic-io.mp3" type="audio/mp3">
+        </audio>
+
+
+    </body>
+</html>

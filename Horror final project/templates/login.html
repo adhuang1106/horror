@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>MAIN GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="bg-secondary">
+    <iframe src="../static/creepy-piano-ambience-by-tim-kulig-from-filmmusic-io.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    <audio id="player" autoplay="true" loop="true">
+    <source src="../static/creepy-]piano-ambience-by-tim-kulig-from-filmmusic-io.mp3" type="audio/mp3">
+    </audio>
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <script>
+        function display(){
+            alert("CHECK INSIDE BOX")
+        }
+    </script>
+    <div class="container">
+      <h1>Please login.</h1>
+      <br>
+      <form action="" method="post">
+         <input type="password" placeholder="Password" name="password" placeholder="Password" class="form-control col-md-2" 
+          <br>
+          <br>
+        <input class="btn btn-dark" type="submit" value="Login">
+        <br>
+      </form>
+      {% if error %}
+        <p class="error" style="color:#EF5A3A"><strong>Error: </strong> {{ error }}
+      {% endif %}
+    <br>
+    <br>
+    <button type="button" class="btn btn-danger" onclick="display()">HINT</button>
+    <br>
+    <br>
+    </div>
+    </center>
+  </body>
+</html>
